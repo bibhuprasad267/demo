@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* common CSS started */
+.page{
+    width:100%;
+    height: 100vh;   
+}
+.navbar{
+    width:100%;
+    display: flex;
+}
+
+.navbar .logo-box{
+    width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .logo-box::before{
+    content: "";
+    width: 25%;
+    height:94px;
+    position: absolute;
+    top:0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5 ;
+    transition-delay: 0.5s;
+}
+
+.navbar .logo-box h2{
+    color: #fff;
+    cursor: pointer;
+}
+.navbar .menu-list{
+    width:75%;
+    background-color: crimson;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.navbar .menu-list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .menu-list ul li{
+    padding: 10px;
+    margin: 20px;
+    color: #fff;
+    /* font-size: 1.2em; */
+    border-radius: 5px;
+    font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
+    cursor: pointer;
+}
+
+.navbar .menu-list ul li:hover{
+    background-color: rgb(13, 63, 63);
+    transition-duration: 0.4s;
+}
+
+.page-content{
+    width:100%;
+    /* height: 85%; */
+    background-color: cadetblue;
+}
+
+.active-page{
+    background-color: rgb(13, 63, 63);
+}
+
+/* common CSS ended */
+
+/* homepage CSS started */
+#home{
+    /* transition-duration: 4s ; */
+    background-image: url("/IMG/bg_home.jpg");
+}
+
+/* #home::before{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    background-image: url("/IMG/bg_home.jpg");
+    z-index: -1;
+} */
+
+
+/* homepage CSS ended  */
+
+/* service CSS started */
+#service{
+    background-color: brown;
+    position: absolute;
+    top:0;
+    display: none;
+}
+
+/* service CSS ended */
+
+/* Product CSS started */
+#product{
+    background-color: rgb(56, 119, 190);
+    position: absolute;
+    top:0;
+    display: none;
+}
+
+/* Product CSS ended */
+
+/* booking CSS started */
+#booking{
+    background-color: rgb(29, 70, 31);
+    position: absolute;
+    top:0;
+    display: none;
+}
+
+/* booking CSS ended */
+
+/* about CSS started */
+#about{
+    background-color: rgb(114, 66, 143);
+    position: absolute;
+    top:0;
+    display: none;
+}
+
+/* about CSS ended */

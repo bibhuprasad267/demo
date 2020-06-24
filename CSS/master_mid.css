@@ -1,0 +1,23 @@
+@media only screen and (max-width: 900px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar .logo-box{
+        width:100%;
+        padding:10px 0px;
+    }
+    .navbar .menu-list{
+        width:100%;
+        justify-content: center;
+        padding:auto;
+    }
+    
+    .navbar .menu-list ul{
+        padding:0px 10px;
+    }
+    .navbar .menu-list ul li{
+        padding: 10px;
+        margin: 10px;
+    }
+
+  }

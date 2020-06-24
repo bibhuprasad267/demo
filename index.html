@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/master_high.css">
+    <link rel="stylesheet" href="/CSS/master_mid.css">
+    <link rel="stylesheet" href="/CSS/master_low.css">
+    <script src="/JS/master.js"></script>
+    <script src="/JS/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".homepage").click(function () {
+                $("#service").hide();
+                $("#product").hide();
+                $("#booking").hide();
+                $("#about").hide();
+                $("#home::before").slideDown(3000);
+                $("#home").slideDown(9000);
+            });
+        });
+        $(document).ready(function () {
+            $(".servicepage").click(function () {
+                $("#home").hide();
+                $("#product").hide();
+                $("#booking").hide();
+                $("#about").hide();
+                $("#service").slideDown(9000);
+
+            });
+        });
+        $(document).ready(function () {
+            $(".productpage").click(function () {
+                $("#home").hide();
+                $("#service").hide();
+                $("#booking").hide();
+                $("#about").hide();
+                $("#product").slideDown();
+            });
+        });
+        $(document).ready(function () {
+            $(".bookingpage").click(function () {
+                $("#home").hide();
+                $("#service").hide();
+                $("#product").hide();
+                $("#about").hide();
+                $("#booking").slideDown();
+            });
+        });
+        $(document).ready(function () {
+            $(".aboutpage").click(function () {
+                $("#home").hide();
+                $("#service").hide();
+                $("#booking").hide();
+                $("#product").hide();
+                $("#about").slideDown();
+            });
+        });
+    </script>
+    <title>website title to show</title>
+</head>
+
+
+<body>
+    <div class="page" id="home">
+        <div class="navbar">
+            <div class="logo-box"><h2>Comp Logo</h2></div>
+            <div class="menu-list">
+                <ul>
+                    <li class="active-page homepage">Home</li>
+                    <li class="servicepage">Services</li>
+                    <li class="productpage">Product</li>
+                    <li class="bookingpage">Booking</li>
+                    <li class="aboutpage">About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content">Home Page</div>
+    </div>
+
+
+    <div class="page" id="service">
+        <div class="navbar">
+            <div class="logo-box"><h2>Comp Logo</h2></div>
+            <div class="menu-list">
+                <ul>
+                    <li class="homepage">Home</li>
+                    <li class="active-page servicepage">Services</li>
+                    <li class="productpage">Product</li>
+                    <li class="bookingpage">Booking</li>
+                    <li class="aboutpage">About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content">Services</div>
+    </div>
+
+
+    <div class="page" id="product">
+        <div class="navbar">
+            <div class="logo-box"><h2>Comp Logo</h2></div>
+            <div class="menu-list">
+                <ul>
+                    <li class="homepage">Home</li>
+                    <li class="servicepage">Services</li>
+                    <li class="active-page productpage">Product</li>
+                    <li class="bookingpage">Booking</li>
+                    <li class="aboutpage">About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content"></div>
+    </div>
+
+
+    <div class="page" id="booking">
+        <div class="navbar">
+            <div class="logo-box"><h2>Comp Logo</h2></div>
+            <div class="menu-list">
+                <ul>
+                    <li class="homepage">Home</li>
+                    <li class="servicepage">Services</li>
+                    <li class="productpage">Product</li>
+                    <li class="active-page bookingpage">Booking</li>
+                    <li class="aboutpage">About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content"></div>
+    </div>
+
+    <div class="page" id="about">
+        <div class="navbar">
+            <div class="logo-box"><h2><a href="#">Comp Logo</a></h2></div>
+            <div class="menu-list">
+                <ul>
+                    <li class="homepage">Home</li>
+                    <li class="servicepage">Services</li>
+                    <li class="productpage">Product</li>
+                    <li class="bookingpage">Booking</li>
+                    <li class="active-page aboutpage">About</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content"></div>
+    </div>
+
+
+
+</body>
+
+</html>
